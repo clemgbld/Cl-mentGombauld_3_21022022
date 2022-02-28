@@ -1,0 +1,15 @@
+// color
+
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+
+$color: (
+  purple: $primary-color,
+  pink: $secondary-color,
+  green: $tertiary-color,
+);
+
+// spacing
+
+$section-padding: 6.4rem;

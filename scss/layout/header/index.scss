@@ -1,0 +1,33 @@
+@import "../../utils";
+
+.header {
+  
+ 
+
+
+  
+  width: 100%;
+
+ 
+
+  &__nav {
+    width: 100%;
+    @include flex--full-center;
+    
+    padding: 16px;
+
+    @include shadow;
+
+      position: relative;
+
+      top: 0;
+    
+  }
+
+  &__img {
+    width: 40%;
+    height: auto;
+
+    object-fit: cover;
+  }
+}
