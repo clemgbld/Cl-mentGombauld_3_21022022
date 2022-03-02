@@ -17,3 +17,7 @@
 @mixin shadow {
   box-shadow: 0 1.5px 4px rgb(0, 0, 0, 24%), 0 1.5px 6px rgb(0, 0, 0, 12%);
 }
+
+@mixin shadow-darker {
+  box-shadow: 0 1.5px 4px rgb(0, 0, 0, 48%), 0 1.5px 6px rgb(0, 0, 0, 24%);
+}

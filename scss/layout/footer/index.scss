@@ -21,6 +21,10 @@
     @include flex-container(1rem);
   }
 
+  &__icon {
+    color: #fff;
+  }
+
   &__link {
     font-size: 2rem;
 

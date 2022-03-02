@@ -5,6 +5,8 @@
   flex-direction: column;
   gap: 2.4rem;
 
+  padding-left: 2.4rem;
+
   &__item {
     position: relative;
 
@@ -19,6 +21,15 @@
 
     @include shadow;
     background-color: $grey-background;
+
+    &:hover {
+      cursor: pointer;
+      background-color: lighten(map-get($color, purple), 35%);
+    }
+
+    &:hover .card-home__icon {
+      color: map-get($color, purple);
+    }
   }
 
   &__number {

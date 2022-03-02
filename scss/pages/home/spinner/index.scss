@@ -1,0 +1,54 @@
+@import "../../../utils";
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+
+    display: none;
+
+    z-index: -1;
+  }
+}
+
+.overlay {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  @include flex--full-center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgb(255, 255, 255, 0.9);
+
+  z-index: 99;
+
+  animation: loading 2.5s linear forwards;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  content: "";
+  box-sizing: border-box;
+
+  top: 50%;
+  left: 50%;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 0.5rem solid map-get($color, purple);
+  border-top-color: lighten(map-get($color, purple), 20%);
+  border-right-color: map-get($color, pink);
+  border-bottom-color: map-get($color, green);
+  animation: spinner 1s linear infinite;
+}
