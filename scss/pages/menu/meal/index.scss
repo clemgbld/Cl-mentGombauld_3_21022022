@@ -1,0 +1,16 @@
+@import "../../../utils";
+
+.meal {
+  width: 100%;
+  height: 30%;
+
+  object-fit: cover;
+
+  @include responsive(map-get($breakpoints, tablet)) {
+    height: 30rem;
+  }
+
+  @include responsive(map-get($breakpoints, laptop)) {
+    height: 50rem;
+  }
+}

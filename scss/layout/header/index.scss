@@ -9,11 +9,13 @@
 
     padding: 16px;
 
-    @include shadow;
-
     position: relative;
 
     top: 0;
+
+    &--shadow {
+      @include shadow;
+    }
   }
 
   &__img {

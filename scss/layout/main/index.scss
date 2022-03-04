@@ -3,17 +3,23 @@
 .main {
   width: 100%;
 
-  @include responsive(map-get($breakpoints, laptop)) {
-    @include flex--full-center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 144rem;
+  &__home {
+    @include responsive(map-get($breakpoints, laptop)) {
+      @include flex--full-center;
+      flex-direction: column;
+      width: 100%;
+      max-width: 144rem;
 
-    border-radius: 2.4rem;
-    margin: 2.4rem;
+      border-radius: 2.4rem;
+      margin: 2.4rem;
 
-    overflow: hidden;
+      overflow: hidden;
 
-    @include shadow;
+      @include shadow;
+    }
+  }
+
+  &__menu {
+    position: relative;
   }
 }

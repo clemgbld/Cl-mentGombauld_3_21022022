@@ -1,0 +1,11 @@
+@import "../../../utils";
+
+.res-name {
+  @include flex-container(0);
+  justify-content: space-between;
+
+  &__title {
+    font-family: "Shrikhand", cursive;
+    font-size: 3.6rem;
+  }
+}
