@@ -5,7 +5,12 @@
   grid-template-columns: 1fr;
   row-gap: 1.6rem;
 
-  background-color: #fff;
+  background-color: inherit;
+
+  @include responsive(map-get($breakpoints, tablet)) {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.6rem;
+  }
 
   &__item {
     position: relative;

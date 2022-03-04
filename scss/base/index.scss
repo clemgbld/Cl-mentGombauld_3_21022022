@@ -11,11 +11,19 @@
 html {
   font-size: 50%;
   overflow-x: hidden;
+
+  scroll-behavior: smooth;
+
+  @include responsive(map-get($breakpoints, tablet)) {
+    font-size: 56.25%;
+  }
+
+  @include responsive(map-get($breakpoints, laptop)) {
+    font-size: 62.25%;
+  }
 }
 
 body {
-  position: relative;
-
   @include flex--full-center;
   flex-direction: column;
 
