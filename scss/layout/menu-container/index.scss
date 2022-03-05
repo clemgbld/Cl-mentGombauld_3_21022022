@@ -1,0 +1,17 @@
+@import "../../utils";
+
+.menu-container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 140rem;
+
+  column-gap: 2.4rem;
+  grid-template-columns: 1fr;
+
+  @include responsive(map-get($breakpoints, laptop)) {
+    grid-template-columns: repeat(3, 39rem);
+    margin-bottom: 5.2rem;
+  }
+}

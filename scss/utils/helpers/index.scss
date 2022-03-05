@@ -1,4 +1,5 @@
 @import "../var";
+@import "../mixin";
 
 // background
 
@@ -10,4 +11,8 @@
 
 .mar--b-52 {
   margin-bottom: 5.2rem;
+
+  @include responsive(map-get($breakpoints, laptop)) {
+    margin-bottom: 0;
+  }
 }
