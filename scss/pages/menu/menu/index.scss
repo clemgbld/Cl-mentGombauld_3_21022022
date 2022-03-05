@@ -7,7 +7,7 @@
 
   flex-direction: column;
 
-  padding: 5.2rem 0 0 0;
+  padding: 5.2rem 0 0 0rem;
 
   width: 100%;
 
@@ -50,6 +50,8 @@
 
     opacity: 0;
 
+    @include shadow;
+
     &:hover {
       cursor: pointer;
     }
@@ -60,7 +62,7 @@
     }
 
     &:hover .menu__price {
-      margin-left: 3rem;
+      margin-left: 2.5rem;
 
       @include responsive(map-get($breakpoints, laptop)) {
         margin-left: 1rem;
@@ -84,8 +86,12 @@
   }
 
   &__plate {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     margin-bottom: 1.2rem;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 
     @include responsive(map-get($breakpoints, laptop)) {
       font-size: 1.6rem;
@@ -158,7 +164,7 @@
 
 // delay animation
 
-@for $i from 0 through 8 {
+@for $i from 0 through 9 {
   .delay-#{$i} {
     animation: fade-in 0.3s linear forwards 0.2s * $i;
   }

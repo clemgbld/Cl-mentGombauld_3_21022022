@@ -2,15 +2,14 @@
 
 .menu-container {
   display: grid;
-  align-items: center;
+  //   align-items: center;
   justify-content: center;
 
-  max-width: 140rem;
-
   column-gap: 2.4rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
 
   @include responsive(map-get($breakpoints, laptop)) {
+    max-width: 140rem;
     grid-template-columns: repeat(3, 39rem);
     margin-bottom: 5.2rem;
   }
