@@ -48,6 +48,8 @@
 
     transition: all 0.5s ease-in-out;
 
+    opacity: 0;
+
     &:hover {
       cursor: pointer;
     }
@@ -135,5 +137,26 @@
     transform: rotate(-360deg);
 
     transition: transform 0.5s ease-in-out;
+  }
+}
+
+// delay animation
+
+@for $i from 0 through 8 {
+  .delay-#{$i} {
+    animation: fade-in 0.5s linear forwards 0.3s * $i;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+
+    transform: translateY(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
