@@ -117,14 +117,15 @@
     align-self: flex-end;
     justify-self: flex-end;
 
-    margin-bottom: 1.2rem;
-
-    transform: translateX(4rem);
+    transform: translateX(7rem);
 
     transition: all 0.5s ease-in-out;
 
+    margin-bottom: 1.4rem;
+
     @include responsive(map-get($breakpoints, laptop)) {
       font-size: 1.6rem;
+      margin-bottom: 2rem;
     }
   }
 
